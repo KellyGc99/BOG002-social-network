@@ -2,7 +2,7 @@
 
 ## Cuynder
 
-Esta red social está pensada para los amantes de los curies, aqui podrán crear post con una descripción o dato curioso de su amigo roedor, dar like a otras publicaciones, entre otras cosas. Si se equivocan al escribir una de los post ¡ No se preocupen! podrán editarlo o eliminarlo cuando quieran. Bienvenid@ y esperamos que disfruten.
+Esta red social está pensada para los amantes de los curies, aqui podrán crear post con una descripción o dato curioso de su amigo roedor, dar like a otras publicaciones, entre otras cosas. Si se equivocan al escribir uno de los post ¡ No se preocupen! podrán editarlo o eliminarlo cuando quieran. Bienvenid@ y esperamos que disfruten.
 
 ## Aspectos técnicos 
 
