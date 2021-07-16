@@ -1,0 +1,107 @@
+html{
+     opacity: 60%;
+}
+body {
+  background-image: url("fondocuyo.jpg");
+  max-width: 100%;
+  margin: 0;
+}
+/*input de correo y usuario*/
+input {
+  border-color: black;
+  border: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+/*Boton para hacer login*/
+.enviar {
+  background-color: #ffc385;
+}
+/*Fondo del logo*/
+.logo {
+  background-color: #ffffff;
+  width: 12vw;
+  border-color: black;
+  border-style: solid;
+}
+/*Dimensiones para el logo*/
+.img_logo {
+  margin-left: 15px;
+  max-width: 10vw;
+}
+footer {
+  height: 50px;
+  background-color: #ffc385;
+  margin-top: 68vh;
+  text-align: center;
+  font-size: 28px;
+}
+/*Div mayor sobre el que aparecen las publicaciones*/
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 8px;
+  position: relative;
+  text-align: left;
+  width: 40vw;
+  border-color: black;
+  border-style: solid;
+}
+/*Div para alojar la descripción*/
+div.card-description {
+  padding: 0 15px 10px;
+  position: relative;
+  font-size: 20px;
+}
+/*Div gris que está detrás de la imagen*/
+.card__image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 50%;
+}
+/*Imagen que esta sobre el div gris*/
+.card__image {
+  width: 40vw;
+  height: 20vw;
+}
+/*Div que almacena el titulo*/
+div.card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+}
+/*Div  de fondo para poner el nombre y la imagen del usuario*/
+.user {
+  background-color: #ffc385;
+}
+/*La imagen de usuario que va al lado del nombre*/
+.usuario {
+  margin-left: 4px;
+  margin-top: 4px;
+}
+/*Nombre de usuario, es un tipo texto que permite  poner texto en linea*/
+.id_usuario {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/*todas las imagenes */
+img {
+  width: "40";
+  height: "40"
+}
+/*Continene el titulo de la publicación*/
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+/*Contiene la fecha*/
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
