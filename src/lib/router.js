@@ -1,11 +1,10 @@
 /* eslint-disable no-use-before-define */
 import { menu } from './view/menu.js';
 import { mostrarPublicaciones } from './view/home.js';
-import { construirPublicaciones } from './view/post.js';
+import { construirPublicaciones, despuesDeCargar } from './view/post.js';
 import { about } from './view/about.js';
 import { login } from './view/login.js';
 import Data from './Data/publicaciones.js';
-import { despuesDeCargar } from './view/post.js';
 
 const dataExistente = Data.post;
 console.log(dataExistente);
@@ -17,8 +16,7 @@ export const view = (hash) => {
 
   switch (hash) {
     case '#/':
-      mostrarPublicaciones(valor);
-      console.log('Aqui deberian ir las publicaciones');
+      mainRoot.appendChild(mostrarPublicaciones(valor));
       break;
     case '#/post':
       mainRoot.appendChild(construirPublicaciones());

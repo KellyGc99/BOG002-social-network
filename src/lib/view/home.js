@@ -1,32 +1,32 @@
-// const mostrarPublicaciones = (imagen, Fecha, Usuario, Titulo, Descripcion) => {
-// const publicaciones
-// };
-
-export function mostrarPublicaciones(dataExistente) {
-  for (let i = 0; i < dataExistente.length; i++) {
-    const mostrar = document.createElement('div');
+// Uso de función expresada (funcion flecha)
+export const mostrarPublicaciones = (dataExistente) => {
+// Cree un elemento Div para pintar la información que traiga de dataExistente
+  const mostrar = document.createElement('div');
+  // Creación de ciclo para iterar sobre la data existente
+  for (let i = 0; i < dataExistente.length; i += 1) {
     console.log(dataExistente[i]);
-    /* const publicaciones = `
-      <div class="cardPost">
-        <div class="user">
-         <img
-           class="usuario"
-            src="Imagenes/usuario.png"
-          />
-         <span class="id_usuario">${Usuario}</span>
-        </div>
+    // uso de template strings para concatenar expresiones
+    const publicaciones = `
+        <div class="cardPost">
+          <div class="user">
+            <img
+              class="usuario"
+              src="./lib/Imagenes/usuario.png"
+            />
+            <span class="id_usuario">${dataExistente[i].Usuario}</span>
+          </div>
         <div class="card__image-holder">
-         <img class="card__image" src="${Imagen}" alt="foto cuy" />
-         </div>
+          <img class="card__image" src="${dataExistente[i].Imagen}" alt="foto cuy" />
+        </div>
         <div class="card-title">
-          <h2>${Titulo}</h2>
+          <h2>${dataExistente[i].Titulo}</h2>
         </div>
         <div class="card-date">
-          <h3>${Fecha}</h3>
+          <h3>${dataExistente[i].Fecha}</h3>
         </div>
-        <div class="card-description">${Descripcion}</div>
+        <div class="card-description">${dataExistente[i].Descripcion}</div>
       </div>`;
-    mostrar.innerHTML = publicaciones;
-    return mostrar;* */
+    mostrar.innerHTML += publicaciones;
   }
-}
+  return mostrar;
+};
