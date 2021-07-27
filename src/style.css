@@ -1,49 +1,76 @@
-html{
-     opacity: 60%;
-}
 body {
-  background-image: url("fondocuyo.jpg");
+  background-image: url("/lib/Imagenes/fondocuyo.jpg");
   max-width: 100%;
   margin: 0;
 }
-/*input de correo y usuario*/
-input {
+/* Elementos del menú */
+.header-nav{
+  margin-top: 10%;
+}
+.header-nav ul{
+  display: flex;
+  list-style: none;
+  background-color: #ffc385;
+  justify-content: space-around;
+}
+.header-nav li {
+  font-size: 36px;
+  padding: 5px;
+}
+.header-nav a {
+  text-decoration: none;
+  color: black;
+}
+/*Elementos del login*/
+.userName {
   border-color: black;
   border: 1;
-  flex-direction: row;
-  justify-content: center;
+  height: 25px;
 }
+
+.userEmail {
+  border-color: black;
+  border: 1;
+  height: 25px;
+}
+
 /*Boton para hacer login*/
 .enviar {
   background-color: #ffc385;
+  border-color: black;
+  border: 1;
+  height: 25px;
 }
-/*Fondo del logo*/
+header {
+  height: 30px;
+  background-color: #ffc385;
+  margin-top: 5vh;
+  text-align: center;
+}
+/*Fondo y dimensiones del logo*/
 .logo {
   background-color: #ffffff;
-  width: 12vw;
+  width: 18vw;
   border-color: black;
   border-style: solid;
+  margin-top: -25px;
 }
-/*Dimensiones para el logo*/
-.img_logo {
-  margin-left: 15px;
-  max-width: 10vw;
-}
+
 footer {
   height: 50px;
   background-color: #ffc385;
-  margin-top: 68vh;
+  margin-top: 20vh;
   text-align: center;
   font-size: 28px;
 }
 /*Div mayor sobre el que aparecen las publicaciones*/
-div.card {
+div.cardPost {
   background: #ffffff;
   display: inline-block;
   margin: 8px;
   position: relative;
   text-align: left;
-  width: 40vw;
+  width: 70vw;
   border-color: black;
   border-style: solid;
 }
@@ -56,13 +83,15 @@ div.card-description {
 /*Div gris que está detrás de la imagen*/
 .card__image-holder {
   background: rgba(0, 0, 0, 0.1);
-  height: 0;
-  padding-bottom: 50%;
+  height: 1px;
+  padding-bottom: 40%;
 }
 /*Imagen que esta sobre el div gris*/
-.card__image {
+div .card__image {
   width: 40vw;
   height: 20vw;
+  padding: 35px;
+  margin-left: 70px;
 }
 /*Div que almacena el titulo*/
 div.card-title {
@@ -72,27 +101,24 @@ div.card-title {
 }
 /*Div  de fondo para poner el nombre y la imagen del usuario*/
 .user {
-  background-color: #ffc385;
+ background-color: #ffc385;
 }
 /*La imagen de usuario que va al lado del nombre*/
-.usuario {
+.user img {
   margin-left: 4px;
   margin-top: 4px;
+  width: 10vw;
 }
 /*Nombre de usuario, es un tipo texto que permite  poner texto en linea*/
-.id_usuario {
+span {
   font-size: 38px;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
+  vertical-align: top;
 }
-/*todas las imagenes */
-img {
-  width: "40";
-  height: "40"
-}
+
 /*Continene el titulo de la publicación*/
 h2 {
+  text-align: center;
   font-size: 38px;
   font-weight: 700;
   margin: 0;
@@ -100,8 +126,83 @@ h2 {
 }
 /*Contiene la fecha*/
 h3 {
-  font-size: 28px;
+  text-align: center;
+  font-size: 22px;
   font-weight: 700;
-  margin: 0;
-  padding: 0;
+  margin: 1;
+  padding: 1;
+}
+
+/*about*/
+.name-app{
+  background-color: #ffc385;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+ article {
+   background-color: #ffffff;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+ }
+ /*crear publicaciones*/
+ form {
+   align-items: center;
+ }
+ .crear-post {
+  background-color: #ffffff;
+  border-color: black;
+  border-style: solid;
+  width: 40vw;
+  margin-left: 200px;
+ }
+textarea {
+  border-color: black;
+  border-style: solid;
+  padding: 5px;
+  margin-left: 52px;
+  margin-top: 30px;
+}
+#usuario {
+  border-color: black;
+  border-style: solid;
+  margin-left: 42px;
+  margin-top: 20px;
+}
+#titulo {
+  border-color: black;
+  border-style: solid;
+  margin-left: 42px;
+  margin-top: 20px;
+}
+
+form button{
+  border-color: black;
+  border-style: solid;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+/*mostrar publicaciones creadas*/
+#postNew {
+  background-color: #ffffff;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+.new-user {
+  background-color: #ffc385;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.new-title  {
+ font-size: 30px;
+ font-weight: 700;
+}
+.new-description {
+ font-size: 20px;
+ font-weight: 100;
 }

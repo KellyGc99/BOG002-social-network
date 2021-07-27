@@ -3,14 +3,13 @@ import {eliminarItem, editarItem } from '../Crud/funcionesCRUD.js';
 export const construirPublicaciones = () => {
   const crearPost = document.createElement('div');
   const enviarPost = `
-  <form id="formularioPost">
-    <input type="text" id="usuario" placeholder="Usuario" /><br>
-    <input type="text" id="titulo" placeholder= "Titulo"/><br>
-    <input type="text" id="descripcion" placeholder="Escribe un mensaje"/><br>
-    <button type="submit"><img src="https://img.icons8.com/material-rounded/24/000000/checkmark--v1.png"/></button>
-  </form>
+  <form id="formularioPost" class= "crear-post">
+    <input type="text" id="usuario" placeholder="Usuario" /><br><br>
+    <input type="text" id="titulo" placeholder= "Titulo"/><br><br>
+    <textarea id="descripcion" placeholder="Escribe un mensaje"/></textarea><br><br>
+    <button type="submit"><img src="https://img.icons8.com/material-rounded/24/000000/checkmark--v1.png"/></button><br><br>
+  </form><br>
   <section id="postNew">
-    <h1>existo</h1>
   </section>
   `;
   crearPost.innerHTML = enviarPost;
@@ -48,11 +47,11 @@ export const despuesDeCargar = () => {
       // console.log(element, index);
       nuevoPost.innerHTML += `
       <div>
-        <h1>${element.usuario}</h1><br>
-        <h2>${element.titulo}</h2><br>
-        <p>${element.descripcion}</p>
-        <button type="button"><img src="https://img.icons8.com/material-rounded/24/000000/edit--v1.png" class ="editar" data-index= ${index} /></button>
-        <button type="button"><img src="https://img.icons8.com/material-rounded/24/000000/delete-forever.png" class ="eliminar" data-index = ${index} /></button>
+        <h1 class="new-user">${element.usuario}</h1><br>
+        <h2 class="new-title">${element.titulo}</h2><br>
+        <p class="new-description">${element.descripcion}</p>
+        <button type="button"><img src="https://img.icons8.com/material-rounded/24/000000/edit--v1.png" class ="editar" data-index= ${index} /></button><br><br>
+        <button type="button"><img src="https://img.icons8.com/material-rounded/24/000000/delete-forever.png" class ="eliminar" data-index = ${index} /></button><br><br>
       </div>`;
     });
   };
